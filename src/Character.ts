@@ -82,7 +82,7 @@ export default class Character implements Fighter {
       this._maxLifePoints = this._race.maxLifePoints;
     }
 
-    this._lifePoints = this._maxLifePoints;
+    this._lifePoints = this._race.maxLifePoints;
   }
 
   special(enemy: Fighter | SimpleFighter): void {
